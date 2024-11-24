@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="INDEX.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>PROJECT-ULTRA</title>
+    </head>
+<body>
+
+    <header class="heading">
+<a href="#" target="_blank" class="logo">Be-<span class="span-1">CLEAR</span></a>
+
+<nav class="navigation">
+<a href="#">PROGRESS</a>
+<a href="#secondary">LISTS</a>
+<a href="#">ABOUT US</a>
+</nav>
+
+    </header>
+
+    <section class="main">
+  <div>
+<h2 class="content">Welcome Back!<br><span class="span-2">Today's Progress</span></h2>
+<input type="range" max="100" min="0" step="1" value="0" class="slider">
+    <div class="ruler">
+        <p class="percentage" id="first">0%</p>
+        <p class="percentage">25%</p>
+        <p class="percentage">50%</p>
+        <p class="percentage">75%</p>
+        <p class="percentage" id="last">100%</p>
+    </div>
+  </div>
+    </section>
+
+    <section class="secondary">
+
+<h1 class="subs">TODAY'S <br>LISTS</h1>
+
+<div class="list-container">
+    <input type="text" class="list-title" value="My Checklist" id="listTitle" />
+    <ul id="checklist">
+      <!-- List items will go here -->
+    </ul>
+    <div class="add-item-container">
+      <input type="text" id="newItemInput" placeholder="Add a new item..." />
+      <button onclick="addItem()" class="Add-btn"><i class="fa-solid fa-plus"></i></button>
+    </div>
+  </div>
+
+  <div class="list-container">
+    <input type="text" class="list-title" value="My List" id="notesTitle" />
+    <ul id="chatbox">
+      <!-- Notes will appear here -->
+    </ul>
+    <div class="add-item-container">
+      <input type="text" id="newNoteInput" placeholder="Add a new item..." />
+      <button onclick="addNote()">Send</button>
+    </div>
+  </div>
+  
+  <script src="INDEX.JS"></script>
+
+    </section>
+
+<section class="final">
+
+<p class="part-1">copyrights all recived at <span class="rights">www.Be-Clear.com</span></p>
+
+<nav class="final-links">
+
+    <a href="#">PROGRESS</a>
+    <a href="#">LISTS</a>
+
+</nav>
+
+</section>
+
+</body>
+</html>
